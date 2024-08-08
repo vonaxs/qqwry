@@ -124,7 +124,7 @@ jobs:
 
       - name: Create a new release
         if: env.TAG_EXISTS == 'false'
-        uses: vonaxs/release@v1
+        uses: FW27623/release@v1
         with:
           commit: ${{ env.GITHUB_SHA }}
           tag: ${{ env.dat_date }}
@@ -135,7 +135,7 @@ jobs:
 
            | Name               | Value                      |
            | :----------------: | :------------------------: |
-           | Download link:     | https://raw.githubusercontent.com/vonaxs/qqwry/main/qqwry.dat |
+           | Download link:     | https://raw.githubusercontent.com/FW27623/qqwry/main/qqwry.dat |
            | File hash:         | qqwry.dat: ${{ env.NEW_HASH }} |
 
            <p align="right"><code>Version: ${{ env.dat_date }} </code></p>
